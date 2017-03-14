@@ -13,7 +13,6 @@ from keras.models import Model
 from keras.layers import Input, Convolution2D
 from keras.optimizers import Adam
 
-
 def srcnn(input_shape=(33,33,1)):
     model = Sequential()
     model.add(Convolution2D(64, 9, 9, border_mode='valid', input_shape=input_shape, activation='relu'))
