@@ -11,7 +11,7 @@ gt = misc.imread('gnd_Y.png')
 low = misc.imresize(gt, 1.0/3.0, 'bicubic')
 low = misc.imresize(low, 3.0, 'bicubic')
 
-for model_id in range(1000,3100,100):
+for model_id in range(3150,14001,50):
     model = load_model("models/%05d.h5" % model_id)
     high = np.zeros(low.shape)
 
